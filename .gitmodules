@@ -1,6 +1,0 @@
-[submodule "tools/verilator"]
-	path = tools/verilator
-	url = git@github.com:CSE140L/verilator.git
-[submodule "tools/pytest_utils"]
-	path = tools/pytest_utils
-	url = git@github.com:CSE140L/pytest_utils.git
