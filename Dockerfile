@@ -26,8 +26,10 @@ ADD tools/Digital.sh /usr/bin/digital
 
 # Install autograder dependencies
 RUN pip3 install cocotb~=1.9 pytest
-RUN git clone https://github.com/CSE140L/pytest_utils.git /tools/pytest_utils
-RUN cd /tools/pytest_utils && pip3 install .
+RUN git clone https://github.com/CSE140L/cocotb_gradescope /tools/cocotb_gradescope
+RUN cd /tools/cocotb_gradescope && pip3 install .
+RUN git clone https://github.com/CSE140L/cse140l-python /tools/cse140l-python
+RUN cd /tools/cse140l-python && pip3 install .
 
 ## Install emsdk
 #RUN apt-get -y install lsb-release wget software-properties-common gnupg
